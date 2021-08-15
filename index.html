@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+
+    <header>
+        <ion-icon class="logo" name="infinite-outline"></ion-icon>
+
+         <div class="header-div">
+            <ul class="header-ul">
+                <li><a href="./index.html">Geometry</a></li>
+                <li><a href="./descuento.html">Discounts</a></li>
+                <li><a href="">Statistics</a></li>
+                <li><a href="">Analysis</a></li>
+            </ul>
+         </div>   
+    </header>
+
+
+
+    
+    <main>
+        <section class="card-container">
+
+                <form class="card">
+                    <h3>How long is each side of your square?</h3>
+
+                        <p>Measure</p>
+                        <input type="number" id="inputCuadrado" placeholder="50">   
+
+                   
+
+                    <div class="card-buttons">
+                        <button type="button" onclick="calcPerimetroCuadrado()">
+                            Perimeter
+                        </button>
+                        <button type="button" onclick="calcAreaCuadrado()">
+                            Area
+                        </button>
+                    </div>
+
+                    <p class="card-p" id="ResultadoP"></p>
+                    
+                </form>
+
+
+                <form class="card">
+                    <h3>How long is each side of your triangule?</h3>
+                    <div class="card-sides">
+                        <div>
+                            <p>Side A</p>
+                            <input type="number" id="inputTriangulo1" placeholder="50">
+                        </div>
+
+                        <div>
+                            <p>Side B</p>
+                            <input type="number" id="inputTriangulo2" placeholder="50"> 
+                        </div>
+                       
+                       <div>
+                        <p>Base</p>
+                        <input type="number" id="inputTrianguloBase" placeholder="50"> 
+                       </div>
+                        
+                       <div>
+                        <p>Height</p>
+                        <input type="number" id="inputTrianguloHeight" placeholder="50">  
+                       </div>
+                       
+
+
+                    </div>
+
+
+                    <div class="card-buttons">
+                        
+                        <button type="button" onclick="calcPerimetroTriangulo()">
+                            Perimeter
+                        </button>
+                        <button type="button" onclick="calcAreaTriangulo()">
+                            Area
+                        </button>
+                    </div>
+                    
+                    <p class="card-p" id="ResultadoP2"></p>
+
+                </form>
+
+
+
+
+                <form class="card">
+                    <h3>What is the radio of your circle?</h3>
+
+                        <p>Radio</p>
+                        <input type="number" id="inputCirculo" placeholder="50">   
+
+                   
+
+                    <div class="card-buttons">
+                        <button type="button" onclick="calcPerimetroCirculo()">
+                            Perimeter
+                        </button>
+                        <button type="button" onclick="calcAreaCirculo()">
+                            Area
+                        </button>
+                    </div>
+
+                    <p class="card-p" id="ResultadoP3"></p>
+                    
+                </form>
+
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+    <footer>    
+
+
+    </footer>
+
+
+
+    <script src="./figuras.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
